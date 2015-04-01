@@ -1,0 +1,14 @@
+{
+  "name": "jabil-logrotate",
+  "version": "0.1.0",
+  "author": "Luther Barnum",
+  "summary": "This module will make sure logrotate is installed and enabled",
+  "license": "Copyright Jabil",
+  "source": "https://github.com/lgbarn/logrotate",
+  "project_page": "https://github.com/lgbarn/logrotate",
+  "issues_url": "https://github.com/lgbarn/logrotate/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
