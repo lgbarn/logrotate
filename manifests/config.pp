@@ -37,19 +37,19 @@
 #
 class logrotate::config inherits logrotate {
 
-  file { '/etc/cron.daily/logrotate':
-    ensure => 'file',
-    owner => 'root',
-    group => 'root',
-    mode => '0755',
-    source => 'puppet:///modules/logrotate/logrotate.cron'
+  file { $logrotate_cron_file:
+    ensure => $logrotate_cron_file_ensure,
+    owner => $logrotate_cron_file_owner,
+    group => $logrotate_cron_file_group,
+    mode => $logrotate_cron_file_mode,
+    source => $logrotate_cron_file_source,
   }
-  file { '/etc/logrotate.conf':
-    ensure => 'file',
-    owner => 'root',
-    group => 'root',
-    mode => '0644',
-    source => 'puppet:///modules/logrotate/logrotate.conf'
+  file { $logrotate_conf_file:
+    ensure => $logrotate_conf_file_ensure,
+    owner => $logrotate_conf_file_owner,
+    group => $logrotate_conf_file_group,
+    mode => $logrotate_conf_file_mode,
+    source => $logrotate_conf_file_source,
   }
 
 }
