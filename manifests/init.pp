@@ -58,4 +58,7 @@ class logrotate (
 
 ) inherits logrotate::params {
 
+  include logrotate::install
+  include logrotate::config
+
 }
