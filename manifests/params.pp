@@ -44,7 +44,7 @@ class logrotate::params {
   $service_hasstatus       = true
   $service_hasrestart      = true
   $package_name            = "logrotate"
-  $package_ensure          = "present"
+  $package_ensure          = "installed"
   $logrotate_cron_file             = '/etc/cron.daily/logrotate'
   $logrotate_cron_file_ensure      = file
   $logrotate_cron_file_source      = 'puppet:///modules/logrotate/logrotate.cron'
@@ -53,7 +53,7 @@ class logrotate::params {
   $logrotate_cron_file_mode        = "0755"
   $logrotate_conf_file             = '/etc/logrotate.conf'
   $logrotate_conf_file_ensure = file
-  $logrotate_conf_file_source = 'puppet:///modules/logrotate/logrotate_conf'
+  $logrotate_conf_file_source = 'puppet:///modules/logrotate/logrotate.conf'
   $logrotate_conf_file_owner  = "root"
   $logrotate_conf_file_group  = "root"
   $logrotate_conf_file_mode   = "0644"
