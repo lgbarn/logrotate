@@ -51,6 +51,7 @@ class logrotate::params {
   $logrotate_cron_file_owner       = "root"
   $logrotate_cron_file_group       = "root"
   $logrotate_cron_file_mode        = "0755"
+  $logrotate_cron_file             = '/etc/logrotate.conf'
   $logrotate_conf_file_ensure = file
   $logrotate_conf_file_source = 'puppet:///modules/logrotate/logrotate_conf'
   $logrotate_conf_file_owner  = "root"
