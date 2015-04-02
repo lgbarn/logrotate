@@ -9,7 +9,7 @@ describe 'logrotate::config' do
         'owner' => 'root',
         'group' => 'root',
         'mode' => '0755',
-        'source' => 'puppet:///modules/logrotate/logrotate',
+        'source' => 'puppet:///modules/logrotate/logrotate.cron',
     ) end
     it do
       should contain_file('/etc/logrotate.conf').with(
