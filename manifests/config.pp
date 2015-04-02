@@ -42,7 +42,7 @@ class logrotate::config inherits logrotate {
     owner => 'root',
     group => 'root',
     mode => '0755',
-    source => 'puppet:///modules/logrotate/logrotate'
+    source => 'puppet:///modules/logrotate/logrotate.cron'
   }
   file { '/etc/logrotate.conf':
     ensure => 'file',
