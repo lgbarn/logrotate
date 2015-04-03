@@ -1,9 +1,9 @@
 {
-  "name": "jabil-logrotate",
+  "name": "lgbarn-logrotate",
   "version": "0.1.0",
   "author": "Luther Barnum",
   "summary": "This module will make sure logrotate is installed and enabled",
-  "license": "Copyright Jabil",
+  "license": "Apache 2.0",
   "source": "https://github.com/lgbarn/logrotate",
   "project_page": "https://github.com/lgbarn/logrotate",
   "issues_url": "https://github.com/lgbarn/logrotate/issues",
