@@ -60,7 +60,6 @@ class logrotate (
 
   include 'logrotate::install'
   include 'logrotate::config'
-  include 'logrotate::service'
 
 
 }
