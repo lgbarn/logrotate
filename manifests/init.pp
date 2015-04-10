@@ -58,10 +58,12 @@ class logrotate (
 
 ) inherits logrotate::params {
 
-  anchor { 'logrotate::begin': } ->
-  class { 'logrotate::install': } ->
-  class { 'logrotate::config': } ->
-  anchor { 'logrotate::end': }
+  contain logrotate::install
+  contain logrotate::config
+
+  Class['logrotate::install'] ->
+  Class['logrotate::config']
+
 
 
 }

@@ -37,8 +37,8 @@
 #
 class logrotate::install inherits logrotate {
 
-  package { $package_name:
-    ensure => $package_ensure,
+  package { $logrotate::params::package_name:
+    ensure => $logrotate::params::package_ensure,
 
   }
 
