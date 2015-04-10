@@ -1,6 +1,6 @@
 {
   "name": "lgbarn-logrotate",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "Luther Barnum",
   "summary": "This module will make sure logrotate is installed and enabled",
   "license": "Apache-2.0",
@@ -14,7 +14,7 @@
     }
   ],
   "dependencies": [
-    {"name":"puppetlabs-stdlib","version_requirement":">= 3.0.0"}
+    {"name":"puppetlabs-stdlib","version_requirement":">= 3.0.0 < 5.0.0"}
   ]
 }
 
