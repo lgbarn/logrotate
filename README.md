@@ -1,5 +1,8 @@
 # logrotate
 
+[![Build Status](https://travis-ci.org/lgbarn/logrotate.png?branch=master)](https://travis-ci.org/lgbarn/logrotate)
+
+
 #### Table of Contents
 
 1. [Overview](#overview)
