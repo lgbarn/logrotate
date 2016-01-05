@@ -37,19 +37,19 @@
 #
 class logrotate::config inherits logrotate {
 
-  file { $logrotate::params::logrotate_cron_file:
-    ensure => $logrotate::params::logrotate_cron_file_ensure,
-    owner  => $logrotate::params::logrotate_cron_file_owner,
-    group  => $logrotate::params::logrotate_cron_file_group,
-    mode   => $logrotate::params::logrotate_cron_file_mode,
-    source => $logrotate::params::logrotate_cron_file_source,
+  file { $::logrotate::params::logrotate_cron_file:
+    ensure => $::logrotate::params::logrotate_cron_file_ensure,
+    owner  => $::logrotate::params::logrotate_cron_file_owner,
+    group  => $::logrotate::params::logrotate_cron_file_group,
+    mode   => $::logrotate::params::logrotate_cron_file_mode,
+    source => $::logrotate::params::logrotate_cron_file_source,
   }
-  file { $logrotate::params::logrotate_conf_file:
-    ensure => $logrotate::params::logrotate_conf_file_ensure,
-    owner  => $logrotate::params::logrotate_conf_file_owner,
-    group  => $logrotate::params::logrotate_conf_file_group,
-    mode   => $logrotate::params::logrotate_conf_file_mode,
-    source => $logrotate::params::logrotate_conf_file_source,
+  file { $::logrotate::params::logrotate_conf_file:
+    ensure => $::logrotate::params::logrotate_conf_file_ensure,
+    owner  => $::logrotate::params::logrotate_conf_file_owner,
+    group  => $::logrotate::params::logrotate_conf_file_group,
+    mode   => $::logrotate::params::logrotate_conf_file_mode,
+    source => $::logrotate::params::logrotate_conf_file_source,
   }
 
 }
