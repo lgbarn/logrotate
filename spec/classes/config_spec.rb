@@ -21,5 +21,3 @@ describe 'logrotate::config' do
     ) end
   end
 end
-#-rwxr-xr-x. 1 root root 196 Jul 18  2013 /etc/cron.daily/logrotate
-#-rw-r--r--. 1 root root 662 Aug 29  2007 /etc/logrotate.conf
