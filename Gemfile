@@ -10,4 +10,5 @@ gem 'rake',  :require => false
 gem 'beaker-rspec',  :require => false
 gem 'serverspec',  :require => false
 gem 'metadata-json-lint',  :require => false
+gem 'vagrant-wrapper',  :require => false
 gem "codeclimate-test-reporter", group: :test, require: nil
