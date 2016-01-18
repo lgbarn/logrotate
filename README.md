@@ -55,7 +55,6 @@ class { 'logrotate': }
 * [`logrotate::config`](#logrotateconfig): Configures the module.
 * [`logrotate::install`](#logrotateinstall): Installs logrotate package on your server.
 * [`logrotate::params`](#logrotateparams): Sets parameters for module.
-=======
 
 #### Private Classes
 
